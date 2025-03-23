@@ -16,7 +16,7 @@ public class WDConf {
         Configuration.browser = dataConfig.getBrowser();
         Configuration.browserSize = dataConfig.getBrowserSize();
         Configuration.browserVersion = dataConfig.getBrowserVersion();
-        if (dataConfig.isRemote()) {
+        if (dataConfig.remote()) {
             Configuration.remote = dataConfig.remoteUrl();
         }
     }
